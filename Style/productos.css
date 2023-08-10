@@ -1,0 +1,11 @@
+@media (max-width: 450px) {
+    .b1, .buscar {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+.b1{
+    font-size:17px;
+    
+}

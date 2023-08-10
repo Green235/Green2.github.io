@@ -1,0 +1,69 @@
+<!-- Modulo de clientes -->
+<div class="container-fluid row d-flex justify-content-center m-2">
+    <div class="card col-lg-5 m-2 p-4">
+        <h2 class="text-center">Gestión de Ventas</h2>
+        <div class="row g-3" id="formulario">
+            <div class="col-md-6">
+                <label for="txtNombreCliV" class="mt-2 ">Nombre(Cliente):</label>
+                <input id="txtNombreCliV" type="text" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtNombreEmpV" class="mt-2">Nombre(Empleado):</label>
+                <input id="txtNombreEmpV" type="text" name="nombre" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtFechaV" class="mt-2">Fecha:</label>
+                <br>
+                <input id="txtFechaV" type="date" name="apellidoPa" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtHoraV" class="mt-2">Hora:</label>
+                <br>
+                <input id="txtHoraV" type="time" name="apellidoMa" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtProductoV" class="mt-2 col-12">Producto:</label><br>
+                <input id="txtProductoV" type="text" name="RFC" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtCantidadV" class="mt-2">Cantidad:</label>
+                <input id="txtCantidadV" type="text" name="telFijo" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtPrecioUni" class="mt-2">Precio Unitario:</label>
+                <input id="txtPrecioUni" type="text" name="telFijo" class="mt-2">
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around mt-1">
+            <button class="mt-1 btn btn-success btn-lg m-1" onclick="moduloVentas.addVenta();" id="btnAdd">Registrar</button>
+            <button class="mt-1 btn btn-info btn-lg m-1 " onclick="moduloVentas.clean();" id="btnClean">Limpiar</button>
+            <button class="mt-1 btn btn-warning btn-lg disabled m-1" onclick="moduloVentas.updateVenta();" id="btnUpdate">Actualizar</button>
+            <button class="mt-1 btn btn-danger btn-lg disabled m-1" onclick="moduloVentas.deleteVenta();" id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+
+    <div class="card col-lg-6  p-4 m-2">
+        <div class="d-flex m-3">
+            <label for="txtBusquedaCompra" class="form-label mx-3">Buscar Pedido de Compra: </label>
+            <input type="text" id="txtBusquedaCompra">
+            <button class="btn btn-primary mx-2" onclick="">Buscar</button>
+        </div>
+        <table class="table table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Cliente</th>
+                    <th>Empleado</th>
+                    <th>Fecha</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody id="tblVentas">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

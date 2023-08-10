@@ -1,0 +1,94 @@
+<div class="container-fluid row d-flex justify-content-center m-2 d-block">
+    <div class="card col-lg-5 m-2 p-4">
+        <h2 class="text-center">Gestión de Productos</h2>
+        <div class="row g-3">
+            <div class="col-md-6">  
+                <label for="txtNombreProd" class="mt-2 ">Nombre del producto:</label>
+                <input id="txtNombreProd" type="text" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtNombreProdGen" class="mt-2">Nombre Génerico</label>
+                <input id="txtNombreProdGen" type="text" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtFormFarm" class="mt-2">Forma Farmacéutica:</label>
+                <input id="txtFormFarm" type="txt"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtUniMed" class="mt-2">Unidad de Medida:</label>
+                <input id="txtUniMed" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtPresent" class="mt-2">Presentación:</label>
+                <input id="txtPresent" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtIndi" class="mt-2">Principal Indicación:</label>
+                <textarea id="txtIndi" type="text"  class="mt-2"></textarea>
+            </div>
+            <div class="col-md-6">
+                <label for="txtContIndi" class="mt-2">Contraindicaciones:</label>
+                <textarea id="txtContIndi" type="text"  class="mt-2"></textarea>
+            </div>
+            <div class="col-md-6">
+                <label for="txtConcen" class="mt-2">Concentración:</label>
+                <input id="txtConcen" type="txt"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtUniEnva" class="mt-2">Unidades en envase:</label>
+                <input id="txtUniEnva" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtPrecioUni" class="mt-2">Precio Unitario:</label>
+                <input id="txtPrecioUni" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtCodBa" class="mt-2">Foto:</label>
+                <input id="txtCodBa" type="txt"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtEstatus" class="mt-2">Ruta de la foto:</label>
+                <input id="txtEstatus" type="txt"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtEstatus" class="mt-2">Código Barras:</label>
+                <input id="txtEstatus" type="txt"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtEstatus" class="mt-2">Estatus:</label>
+                <input id="txtEstatus" type="txt"  class="mt-2">
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-md-center justify-content-around mt-2">
+            <button class="bl mt-2 btn btn-success btn-lg m-1" onclick="moduloProductos.addProducto();" id="btnAdd">Registrar</button>
+            <button class="bl mt-2 btn btn-info btn-lg m-1" onclick="moduloProductos.cleanProd();" id="btnClean">Limpiar</button>
+            <button class="bl mt-2 btn btn-warning btn-lg disabled m-1" onclick="moduloProductos.updateProducto();" id="btnUpdate">Actualizar</button>
+            <button class="bl mt-2 btn btn-danger btn-lg disabled m-1" onclick="moduloProductos.deleteProducto();" id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+
+    <div class="card col-lg-6  p-4 m-2">
+        <div class="buscar d-flex m-3">
+            <label for="txtBusquedaProducto" class="form-label mx-3">Buscar Producto: </label>
+            <input type="text" id="txtBusquedaProducto">
+            <button class="btn btn-primary mx-2" onclick="moduloProductos.buscarProducto();">Buscar</button>
+        </div>
+        <div class="table table-responsive">
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Nombre Producto</th>
+                        <th>Unidad de Medida</th>
+                        <th>Unidad Envase</th>
+                        <th>Precio Unitario</th>
+                        <th>Estatus</th>
+                    </tr>
+                </thead>
+                <tbody id="tblProductos">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

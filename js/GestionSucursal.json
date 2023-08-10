@@ -1,0 +1,45 @@
+[    
+    {
+        "nombre_sucursal": "Plaza Centro MAX", 
+        "titular": "Jorge", 
+        "rfc": "HE6907", 
+        "domicilio": "Boulevard Aereopuerto 207", 
+        "colonia": "Brisas de Hidalgo", 
+        "ciudad": "León", 
+        "estado": "Guanajuato",
+        "codigo_postal": "37100", 
+        "telefono_fijo": "4778744244",
+        "longitud": "20°",
+        "latitud": "Norte",
+        "estatus": "Activo"
+    },
+    {
+        "nombre_sucursal": "Plaza Mayor", 
+        "titular": "Diego", 
+        "rfc": "GEUDD554SN", 
+        "domicilio": "Boulevard Morelos 326", 
+        "colonia": "San Juan Bosco", 
+        "ciudad": "León", 
+        "estado": "Guanajuato",
+        "codigo_postal": "458777", 
+        "telefono_fijo": "4777909189",
+        "longitud": "20°",
+        "latitud": "Sur",
+        "estatus": "Activo"   
+    },
+    {
+        "nombre_sucursal": "Plaza Centro", 
+        "titular": "José", 
+        "rfc": "HKKBÑ65", 
+        "domicilio": "Boulevard Miguel Hidalgo 524", 
+        "colonia": "Brisas del Campestre", 
+        "ciudad": "León", 
+        "estado": "Guanajuato",
+        "codigo_postal": "874512", 
+        "telefono_fijo": "47798747851",
+        "longitud": "20°",
+        "latitud": "Oeste",
+        "estatus": "Activo" 
+    }
+
+]

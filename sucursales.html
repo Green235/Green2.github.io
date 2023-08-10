@@ -1,0 +1,121 @@
+
+<div class="container-fluid row d-flex justify-content-center m-2 d-block">
+    <div class="card col-lg-5 m-2 p-4">
+        <h2 class="text-center">Gestión de Sucursales</h2>
+        <div class="row g-3">
+            <div class="col-md-6">  
+                <label for="txtNombreSuc" class="mt-2 ">Nombre de sucursal:</label>
+                <input id="txtNombreSuc" type="text" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtTitular" class="mt-2">Titular:</label>
+                <input id="txtTitular" type="text" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtRFC" class="mt-2">RFC:</label>
+                <input id="txtRFC" type="txt"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtDomicilio" class="mt-2">Domicilio:</label>
+                <input id="txtDomicilio" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtColonia" class="mt-2">Colonia:</label>
+                <input id="txtColonia" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtCiudad" class="mt-2">Ciudad:</label>
+                <input id="txtCiudad" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="entidad" class="mt-2">Selecciona tu estado: </label>
+                <select entidad="entidad" id="estado">
+                    <option value="Aguas Calientes">Aguas Calientes</option>
+                    <option value="Baja California">Baja California</option>
+                    <option value="Baja California Sur">Baja California Sur</option>
+                    <option value="Campeche">Campeche</option>
+                    <option value="Coahuila">Coahuila</option>
+                    <option value="Colima">Colima</option>
+                    <option value="Chiapas">Chiapas</option>
+                    <option value="Chihuahua">Chihuahua</option>
+                    <option value="Distrito Federal">Distrito Federal</option>
+                    <option value="Durango">Durango</option>
+                    <option value="Guanajuato">Guanajuato</option>
+                    <option value="Guerrero">Guerrero</option>
+                    <option value="Hidalgo">Hidalgo</option>
+                    <option value="Jalisco">Jalisco</option>
+                    <option value="México">México</option>
+                    <option value="Michoacán">Michoacán</option>
+                    <option value="Morelos">Morelos</option>
+                    <option value="Nayarit">Nyarit</option>
+                    <option value="Nuevo León">Nuevo León</option>
+                    <option value="Oaxaca">Oaxaca</option>
+                    <option value="Puebla">Puebla</option>
+                    <option value="Queretaro">Queretaro</option>
+                    <option value="Quintana Roo">Quintana Roo</option>
+                    <option value="San Luis Potosí">San Luis Potosí</option>
+                    <option value="Sinaloa">Sinaloa</option>
+                    <option value="Sonora">Sonora</option>
+                    <option value="Tabasco">Tabasco</option>
+                    <option value="Tamaulipas">Tamaulipas</option>
+                    <option value="Tlaxcala">Tlaxcala</option>
+                    <option value="Veracruz">Veracruz</option>
+                    <option value="Yucatán">Yucatán</option>
+                    <option value="Zacatecas">Zacatecas</option>
+                    <option value="Extranjero">Extranjero</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="txtCódigoPostal" class="mt-2">Código Postal</label>
+                <input id="txtCódigoPostal" type="txt"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtMovil" class="mt-2">Teléfono fijo:</label>
+                <input id="txtMovil" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtLongitud" class="mt-2">Longitud:</label>
+                <input id="txtLongitud" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtLatitud" class="mt-2">Latitud:</label>
+                <input id="txtLatitud" type="txt"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtEstatus" class="mt-2">Estatus:</label>
+                <input id="txtEstatus" type="txt"  class="mt-2">
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-success btn-lg m-1" onclick="moduloSucursal.addSucursal();" id="btnAdd">Registrar</button>
+            <button class="mt-2 btn btn-info btn-lg m-1" onclick="moduloSucursal.clean();" id="btnClean">Limpiar</button>
+            <button class="mt-2 btn btn-warning btn-lg disabled m-1" onclick="moduloSucursal.updateSucursal();" id="btnUpdate">Actualizar</button>
+            <button class="mt-2 btn btn-danger btn-lg disabled m-1" onclick="moduloSucursal.deleteSucursal();" id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+
+    <div class="card col-lg-6  p-4 m-2">
+        <div class="d-flex m-3">
+            <label for="txtBusquedaSucursal" class="form-label mx-3">Buscar Sucursal: </label>
+            <input type="text" id="txtBusquedaSucursal">
+            <button class="btn btn-primary mx-2" onclick="moduloSucursal.loadTabla();">Buscar</button>
+        </div>
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th>Nombre Sucursal</th>
+                    <th>Nombre del titular</th>
+                    <th>Ciudad</th>
+                    <th>Estado</th>
+                    <th>Código Postal</th>
+                    <th>Teléfono fijo</th>
+                    <th>Estatus</th>
+                </tr>
+            </thead>
+            <tbody id="tbSucursal">
+
+            </tbody>
+        </table>
+    </div>
+</div>

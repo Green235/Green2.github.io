@@ -1,0 +1,106 @@
+.btn{
+    display: none;
+}
+
+.btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #031633;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    transform: scale(1.1);
+}
+
+.menu{
+    display: none;
+}
+
+.container .btn button,
+.container .menu button,
+.close{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #eceff1;
+    padding: 9px 25px;
+    background: #031633;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.container .btn button:hover,
+.container .menu button:hover{
+    background-color: #031633;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 800px) {
+    .btn{
+        display: inherit;
+    }
+    .menu{
+        display: inherit;
+    }
+}
+
+.container a {
+    text-decoration: none;
+}
+.container .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color:#031633;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.container .overlay .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: white;
+}
+
+.container .overlay a:hover,
+.container .overlay a:focus {
+    color: gray;
+}
+
+.container .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and(max-height:450px) {
+    .container .overlay a{
+        font-size: 20px;
+
+    }
+    .container .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

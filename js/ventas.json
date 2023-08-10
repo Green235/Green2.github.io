@@ -1,0 +1,49 @@
+[
+    {
+        "nombre_Cliente":"María",
+        "nombre_Empleado":"Carlos",
+        "fecha_Venta":"2023-08-03",
+        "hora_Venta":"10:30:00",
+        "producto_Venta":"Aspirina",
+        "cantidad_Venta":"5",
+        "precio_Unitario":"$50"
+    },
+    {
+        "nombre_Cliente":"Juan",
+        "nombre_Empleado":"Mónica",
+        "fecha_Venta":"2023-08-03",
+        "hora_Venta":"12:15:00",
+        "producto_Venta":"Amoxicilina",
+        "cantidad_Venta":"10",
+        "precio_Unitario":"$20"
+    },
+    {
+        "nombre_Cliente":"Ana",
+        "nombre_Empleado":"José",
+        "fecha_Venta":"2023-08-03",
+        "hora_Venta":"15:00:00",
+        "producto_Venta":"Ibuprofeno",
+        "cantidad_Venta":"3",
+        "precio_Unitario":"$20"
+    },
+    {
+        "nombre_Cliente":"Pedro",
+        "nombre_Empleado":"Luisa",
+        "fecha_Venta":"2023-08-03",
+        "hora_Venta":"16:45:00",
+        "producto_Venta":"Cetirizina",
+        "cantidad_Venta":"8",
+        "precio_Unitario":"$60"
+    },
+    {
+        "nombre_Cliente":"Laura",
+        "nombre_Empleado":"Javier",
+        "fecha_Venta":"2023-08-03",
+        "hora_Venta":"18:30:00",
+        "producto_Venta":"Vitamina C",
+        "cantidad_Venta":"2",
+        "precio_Unitario":"$100"
+    }
+]
+    
+        

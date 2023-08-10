@@ -1,0 +1,64 @@
+<!-- Modulo de clientes -->
+<div class="container-fluid row d-flex justify-content-center m-2">
+    <div class="card col-lg-5 m-2 p-4">
+        <h2 class="text-center">Gestión de Pedidos de Compra</h2>
+        <div class="row g-3" id="formulario">
+            <div class="col-md-6">
+                <label for="txtNombreSucur" class="mt-2 ">Nombre Sucursal:</label>
+                <input id="txtNombreSucur" type="text" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtNombreEmp" class="mt-2">Nombre(Empleado):</label>
+                <input id="txtNombreEmp" type="text" name="nombre" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtFecha" class="mt-2 d-block">Fecha:</label>
+                <br>
+                <input id="txtFecha" type="date" name="apellidoPa" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtHora" class="mt-2 d-block">Hora:</label>
+                <br>
+                <input id="txtHora" type="time" name="apellidoMa" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtProducto" class="mt-2 col-12">Producto:</label><br>
+                <input id="txtProducto" type="text" name="RFC" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtCantidad" class="mt-2">Cantidad:</label>
+                <input id="txtCantidad" type="text" name="telFijo" class="mt-2">
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around mt-1">
+            <button class="mt-1 btn btn-success btn-lg m-1" onclick="moduloPedidos.addCompra();" id="btnAdd">Registrar</button>
+            <button class="mt-1 btn btn-info btn-lg m-1 " onclick="moduloPedidos.clean();" id="btnClean">Limpiar</button>
+            <button class="mt-1 btn btn-warning btn-lg disabled m-1" onclick="moduloPedidos.updateCompra();" id="btnDelete">Actualizar</button>
+            <button class="mt-1 btn btn-danger btn-lg disabled m-1" onclick="moduloPedidos.deleteCompra();" id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+
+    <div class="card col-lg-6  p-4 m-2">
+        <div class="d-flex m-3">
+            <label for="txtBusquedaCompra" class="form-label mx-3">Buscar Pedido de Compra: </label>
+            <input type="text" id="txtBusquedaCompra">
+            <button class="btn btn-primary mx-2" onclick="">Buscar</button>
+        </div>
+        <table class="table table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Sucursal</th>
+                    <th>Fecha</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Estatus</th>
+                </tr>
+            </thead>
+            <tbody id="tblCompra">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+

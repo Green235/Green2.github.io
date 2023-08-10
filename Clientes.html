@@ -1,0 +1,79 @@
+<!-- Modulo de clientes -->
+<div class="container-fluid row d-flex justify-content-center m-2">
+    <div class="card col-lg-5 m-2 p-4">
+        <h2 class="text-center">Gestión de Clientes</h2>
+        <div class="row g-3" id="formulario">
+            <div class="col-md-6">
+                <label for="txtNumUnico" class="mt-2 ">Número unico del Cliente</label>
+                <input id="txtNumUnico" type="text" readonly class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtNombre" class="mt-2">Nombre(s):</label>
+                <input id="txtNombre" type="text" name="nombre" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtApePaterno" class="mt-2">Apellido Paterno:</label>
+                <input id="txtApePaterno" type="text" name="apellidoPa" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtApeMaterno" class="mt-2">Apellido Materno:</label>
+                <input id="txtApeMaterno" type="text" name="apellidoMa" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label class="mt-2">Género:</label>
+                <select class="form-select form-select-sm col-md-6" id="txtGenero" name="txtGenero">
+                    <option value="Masculino" >Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="txtRfc" class="mt-2 col-12">RFC:</label><br>
+                <input id="txtRfc" type="text" name="RFC" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtTelefono" class="mt-2">Teléfono Fijo:</label>
+                <input id="txtTelefono" type="text" name="telFijo" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtMovil" class="mt-2">Teléfono Móvil:</label>
+                <input id="txtMovil" type="text" name="telMovil" class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtCorreo" class="mt-2">Correo Electrónico:</label>
+                <input id="txtCorreo" type="text" name="correo" class="mt-2">
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around mt-1">
+            <button class="mt-1 btn btn-success btn-lg m-1" onclick="moduloClientes.addCliente();" id="btnAdd">Registrar</button>
+            <button class="mt-1 btn btn-info btn-lg m-1 " onclick="moduloClientes.clean();" id="btnClean">Limpiar</button>
+            <button class="mt-1 btn btn-warning btn-lg disabled m-1" onclick="moduloClientes.updateCliente();" id="btnUpdate">Actualizar</button>
+            <button class="mt-1 btn btn-danger btn-lg disabled m-1" onclick="moduloClientes.deleteCliente();" id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+
+    <div class="card col-lg-6  p-4 m-2">
+        <div class="d-flex m-3">
+            <label for="txtBusquedaCliente" class="form-label mx-3">Buscar Cliente: </label>
+            <input type="text" id="txtBusquedaCliente">
+            <button class="btn btn-primary mx-2" onclick="moduloClientes.buscarCliente();">Buscar</button>
+        </div>
+        <div class="table table-responsive container">
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Género</th>
+                        <th>Teléfono Movil</th>
+                        <th>Estatus</th>
+                    </tr>
+                </thead>
+                <tbody id="tblClientes">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sucursal Plaza Mayor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style/bootstrap-5.3.0-dist/css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="Style/SICEFA_CENTRAL.css" type="text/css">
+        <script src="https://kit.fontawesome.com/741c6f915f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top color">
+            <a class="navbar-brand" href="#">
+            </a>
+            <div class="container">
+                <a href="#" class="navbar-brand"> <span class="text-primary"></span></a>
+                <a onclick="openNav()" class="menu" ><button class="btn navbar-toggler" type="button">
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button></a>
+                <div class="overlay" id="mobile-menu">
+                    <a onclick="closeNav()" class="close">&times;</a>
+                    <div class="overlay-content">
+                        <a onclick="cargarGestionPedidosCompras(), closeNav();" >Gestión Compras</a>
+                        <a onclick="cargarGestionVentas(), closeNav();" >Gestión Ventas</a>
+                        <a onclick="cargarModuloEmpleados(), closeNav();">Gestion Empleados</a>
+                        <a onclick="cargarConsultaProductos(), closeNav();">Consulta Productos</a>
+                        <a onclick="cargarModuloClientes(), closeNav();">Gestión Clientes</a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarS">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="cargarGestionPedidosCompra();" class="nav-link">Gestión Compras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="cargarGestionVentas();" class="nav-link">Gestión Ventas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="cargarModuloEmpleados();" class="nav-link">Gestión Empleados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="cargarConsultaProductos();" class="nav-link">Consulta Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="cargarModuloClientes();" class="nav-link">Gestión Clientes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <div class="container-fluid container">
+            <h1 class="text-center">SUCURSAL PLAZA MAYOR</h1>
+            <div id="contenedorPrincipal" class="col-12">
+                <img class="img-fluid rounded-pill" src="Imagenes/Medicamos_tu_vida.jpg" width="width" height="height" alt="alt"/>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="Imagenes/Logo_Farmacia.png" alt="Logo_Farmacia"/>
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2 class="text-white mb-5 tamaño-1">SOBRE NOSOTROS:</h2>
+                    <p class="text-white-50 mb-3">Medicamos tu Vida S.A. es una empresa dedicada a la venta de medicamentos genéricos y de patente.</p>
+                    <p class="text-white-50 mb-3">Somos reconocidos en el mercado farmacéutico estatal, 
+                        motivo por el cual logrado un rápido crecimiento y actualmente cuenta con 
+                        tres sucursales de venta repartidas en la ciudad de León Guanajuato 
+                        (Centro, Centro Max y Plaza Mayor), teniendo la oficina central; 
+                        en la colonia Futurama Monterrey de esta misma ciudad.</p>
+                </div>
+                <div class="box">
+                    <h2 class="text-white mb-5 tamaño-1">SIGUENOS:</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2 d-block">
+                <small>&copy; 2023 <b>Medicamos tu Vida S.A</b> - Todos Los Derechos Reservados</small>
+            </div>
+        </footer>
+        <script src="js/controller_Main.js"></script>
+    </body>
+</html>

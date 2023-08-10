@@ -1,0 +1,123 @@
+[    
+    {
+        "nombre": "Juan", 
+        "apellido_paterno": "Martínez", 
+        "apellido_materno" : "Hernández", 
+        "genero" : "Masculino", 
+        "rfc" : "MAHJ900320ABC", 
+        "telefono" : "33-9876-5432", 
+        "telefono_movil" : "33-9876-5432",
+        "correo_electronico" : "jcliente1@ejemplo.com", 
+        "numero_unico_cliente" : "11",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "María", 
+        "apellido_paterno": "García", 
+        "apellido_materno" : "López", 
+        "genero" : "Femenino", 
+        "rfc" : "GALM850715AB1", 
+        "telefono" : "55-1234-5678", 
+        "telefono_movil" : "55-1234-5678",
+        "correo_electronico" : "cliente2@ejemplo.com", 
+        "numero_unico_cliente" : "12",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Pedro", 
+        "apellido_paterno": "González", 
+        "apellido_materno" : "Ruiz", 
+        "genero" : "Masculino", 
+        "rfc" : "GORP950910JAL", 
+        "telefono" : "33-8765-4321", 
+        "telefono_movil" : "33-8765-4321",
+        "correo_electronico" : "cliente3@ejemplo.com", 
+        "numero_unico_cliente" : "13",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Fernanda", 
+        "apellido_paterno": "Torres", 
+        "apellido_materno" : "González", 
+        "genero" : "Femenino", 
+        "rfc" : "TOGF930814MOC", 
+        "telefono" : "81-6543-2109", 
+        "telefono_movil" : "81-6543-2109",
+        "correo_electronico" : "cliente4@ejemplo.com", 
+        "numero_unico_cliente" : "14",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Ana", 
+        "apellido_paterno": "López", 
+        "apellido_materno" : "Castillo", 
+        "genero" : "Femenino", 
+        "rfc" : "LOCA881205MOC", 
+        "telefono" : "81-2345-6789", 
+        "telefono_movil" : "81-2345-6789",
+        "correo_electronico" : "cliente5@ejemplo.com", 
+        "numero_unico_cliente" : "15",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Laura", 
+        "apellido_paterno": "Fernández", 
+        "apellido_materno" : "Gómez", 
+        "genero" : "Femenino", 
+        "rfc" : "FEGL820425MOC", 
+        "telefono" : "81-3456-7890", 
+        "telefono_movil" : "81-3456-7890",
+        "correo_electronico" : "cliente6@ejemplo.com", 
+        "numero_unico_cliente" : "16",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Jorge", 
+        "apellido_paterno": "Sánchez", 
+        "apellido_materno" : "Ramírez", 
+        "genero" : "Maculino", 
+        "rfc" : "SARJ871130MOC", 
+        "telefono" : "33-7654-3210", 
+        "telefono_movil" : "33-7654-3210",
+        "correo_electronico" : "cliente7@ejemplo.com", 
+        "numero_unico_cliente" : "17",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Roberto", 
+        "apellido_paterno": "Vargas", 
+        "apellido_materno" : "Silva", 
+        "genero" : "Maculino", 
+        "rfc" : "VASR800501ABC", 
+        "telefono" : "33-3210-9876", 
+        "telefono_movil" : "33-3210-9876",
+        "correo_electronico" : "cliente8@ejemplo.com", 
+        "numero_unico_cliente" : "18",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Diana", 
+        "apellido_paterno": "Hernández", 
+        "apellido_materno" : "Luna", 
+        "genero" : "Femenino", 
+        "rfc" : "HEL109180ABC", 
+        "telefono" : "81-4321-0987", 
+        "telefono_movil" : "81-4321-0987",
+        "correo_electronico" : "cliente9@ejemplo.com", 
+        "numero_unico_cliente" : "19",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Alejandro", 
+        "apellido_paterno": "Gómez", 
+        "apellido_materno" : "Pérez", 
+        "genero" : "Maculino", 
+        "rfc" : "GOPA840608DEF", 
+        "telefono" : "33-0987-6543", 
+        "telefono_movil" : "33-0987-6543",
+        "correo_electronico" : "cliente10@ejemplo.com", 
+        "numero_unico_cliente" : "20",
+        "estatus": "Activo"
+    }
+
+]
